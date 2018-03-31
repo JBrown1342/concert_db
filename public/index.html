@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Concert_db</title>
+  </head>
+  <body id="body">
+
+    <div><a href= "http://localhost:3000/add_artist"><strong>Add Artist</strong></a></div>
+    <div><a href= "http://localhost:3000/add_show"><strong>Add Show</strong></a></div>
+
+
+    <form name="search_for_shows" action="/show_search.html" method="post">
+      <label for="select_artist">Search for shows by artist</label>
+      <select name="select_artist">
+        <option id="@@artist_list_1@@"></option>
+      </select>
+      <input type="submit" name="submit_search" value="Search">
+    </form>
+
+  </body>
+</html>
